@@ -1,0 +1,24 @@
+{
+  "_note": "Copy to answers.local.json and fill in YOUR OWN TRUE facts. answers.local.json is private and git-ignored. Anything not listed here makes the bot skip that question.",
+  "facts": {
+    "noticePeriodDays": 30,
+    "currentCtcLpa": 0,
+    "expectedCtcLpa": 0,
+    "totalExperienceYears": 0,
+    "relocate": true,
+    "currentLocation": "City"
+  },
+  "generalTestingTerms": [
+    "testing",
+    "software testing",
+    "qa",
+    "quality assurance",
+    "test automation",
+    "automation testing",
+    "manual testing"
+  ],
+  "toolExperienceYears": {
+    "playwright": 0,
+    "typescript": 0
+  }
+}

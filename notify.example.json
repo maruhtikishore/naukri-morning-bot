@@ -1,0 +1,7 @@
+{
+  "_note": "Copy to notify.local.json (private, git-ignored). Green API: https://green-api.com. chat_id is 91<your number>@c.us to message yourself.",
+  "api_url": "https://api.green-api.com",
+  "id_instance": "",
+  "api_token": "",
+  "chat_id": "91XXXXXXXXXX@c.us"
+}

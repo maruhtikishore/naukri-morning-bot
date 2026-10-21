@@ -1,0 +1,74 @@
+{
+  "mode": "apply",
+  "browserChannel": "chrome",
+  "headless": false,
+  "notify": { "enabled": true },
+  "profile": {
+    "yearsExperience": 3.75,
+    "experienceTolerance": 0.5
+  },
+  "search": {
+    "roles": [
+      "sdet",
+      "automation test engineer",
+      "qa automation engineer",
+      "playwright automation"
+    ],
+    "locations": ["chennai", "bengaluru", "hyderabad"],
+    "jobAgeDays": 3,
+    "maxPagesPerSearch": 2
+  },
+  "filters": {
+    "titleMustMatch": "test|qa|sdet|quality|automation",
+    "titleExclude": "manager|lead|architect|head|principal|director|trainee|intern|fresher|java developer|devops|data engineer|manual|contract|walk-in|walkin|\\bjava\\b|selenium|appium",
+    "minScore": 8,
+    "requireAny": ["playwright", "typescript", "javascript", "mocha", "api testing", "postman", "rest api"],
+    "descriptionExclude": []
+  },
+  "scoring": {
+    "playwrightShield": ["selenium", "java", "core java", "rest assured", "appium"],
+    "titleBonus": { "playwright": 3, "typescript": 2 },
+    "positive": {
+      "playwright": 5,
+      "typescript": 3,
+      "javascript": 2,
+      "api testing": 2,
+      "rest api": 1,
+      "postman": 1,
+      "automation": 2,
+      "sdet": 2,
+      "mocha": 2,
+      "ci/cd": 1,
+      "github actions": 1,
+      "jira": 1,
+      "regression": 1,
+      "banking": 2,
+      "bfsi": 2,
+      "finacle": 3,
+      "python": 1
+    },
+    "negative": {
+      "selenium": -4,
+      "java": -3,
+      "core java": -3,
+      "etl": -4,
+      "guidewire": -4,
+      "servicenow": -4,
+      "sap": -3,
+      "rest assured": -1,
+      "appium": -2,
+      "c#": -2,
+      "tosca": -3,
+      "uft": -3,
+      "qtp": -2,
+      "mainframe": -3
+    }
+  },
+  "limits": {
+    "maxApplicationsPerDay": 5,
+    "maxQuestionnaireApplicationsPerDay": 1,
+    "delayMinSeconds": 6,
+    "delayMaxSeconds": 14,
+    "maxConsecutiveFailures": 3
+  }
+}

@@ -1,0 +1,11 @@
+[Unit]
+Description=Run the Naukri morning bot every day at 7:00
+
+[Timer]
+# Interpreted in the machine's timezone. Set it with: sudo timedatectl set-timezone Asia/Kolkata
+OnCalendar=*-*-* 07:00:00
+# If the machine was off at 7:00, run once as soon as it is back on.
+Persistent=true
+
+[Install]
+WantedBy=timers.target

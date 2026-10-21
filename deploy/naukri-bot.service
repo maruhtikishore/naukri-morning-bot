@@ -1,0 +1,12 @@
+[Unit]
+Description=Naukri morning job bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+# Edit User and the path to match your machine.
+User=pi
+WorkingDirectory=/home/pi/naukri-bot
+ExecStart=/home/pi/naukri-bot/deploy/run-morning.sh
+TimeoutStartSec=2h

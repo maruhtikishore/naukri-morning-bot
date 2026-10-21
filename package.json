@@ -1,0 +1,21 @@
+{
+  "name": "naukri-morning-bot",
+  "private": true,
+  "type": "module",
+  "description": "Daily Naukri job search + guarded auto-apply for SDET / Automation roles",
+  "scripts": {
+    "login": "tsx src/login.ts",
+    "dry": "tsx src/bot.ts --dry",
+    "apply": "tsx src/bot.ts --apply",
+    "run": "tsx src/bot.ts",
+    "notify-test": "tsx src/notify-test.ts"
+  },
+  "dependencies": {
+    "playwright": "^1.49.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}

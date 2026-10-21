@@ -1,0 +1,10 @@
+# Secrets and personal data: never commit these
+.profile/
+notify.local.json
+answers.local.json
+
+# Generated at runtime
+data/
+node_modules/
+*.tmp.ts
+*.log
